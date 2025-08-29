@@ -1,103 +1,180 @@
-import Image from "next/image";
+"use client";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+    <main className="flex flex-col min-h-screen bg-gray-100 text-gray-900">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center text-center py-20 bg-white shadow">
+        <h1 className="text-5xl font-bold mb-4">Hi, I'm Khushi 👋</h1>
+        <h2 className="text-xl text-gray-600 mb-6">
+          Data Analyst | Python | SQL | Excel
+        </h2>
+        <p className="max-w-2xl text-gray-700 mb-8">
+          I help businesses make better decisions using data. Explore my
+          background, skills, and projects below.
+        </p>
+        <div className="flex gap-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#about"
+            className="px-5 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            About
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#resume"
+            className="px-5 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700"
           >
-            Read our docs
+            Resume
+          </a>
+          <a
+            href="#projects"
+            className="px-5 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="px-5 py-2 bg-pink-600 text-white rounded-lg shadow hover:bg-pink-700"
+          >
+            Contact
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 bg-gray-50">
+        <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
+        <p className="max-w-3xl mx-auto text-center text-gray-700">
+          I’m Khushi, a passionate data analyst with a background in Python, SQL,
+          and Excel. I enjoy finding insights from data, building dashboards,
+          and solving real-world problems through analytics.
+        </p>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className="py-20 px-6 bg-white shadow-inner">
+        <h2 className="text-3xl font-bold mb-6 text-center">Resume</h2>
+        <p className="text-center text-gray-700 mb-4">
+          You can view and download my resume below:
+        </p>
+        <div className="flex justify-center">
+          <a
+            href="/resume.pdf"
+            download
+            className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700"
+          >
+            Download Resume
+          </a>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-6 bg-gray-50">
+        <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {/* Project 1 */}
+          <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+            <h3 className="text-xl font-semibold mb-2">Sales Dashboard</h3>
+            <p className="text-gray-600">
+              Interactive Power BI dashboard analyzing sales trends and
+              performance.
+            </p>
+            <a
+              href="https://github.com/yourusername/sales-dashboard"
+              target="_blank"
+              className="text-blue-600 hover:underline"
+            >
+              View on GitHub
+            </a>
+          </div>
+
+          {/* Project 2 */}
+          <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+            <h3 className="text-xl font-semibold mb-2">Python Data Cleaning</h3>
+            <p className="text-gray-600">
+              Automated scripts for cleaning and transforming raw data using
+              Pandas.
+            </p>
+            <a
+              href="https://github.com/yourusername/python-cleaning"
+              target="_blank"
+              className="text-blue-600 hover:underline"
+            >
+              View on GitHub
+            </a>
+          </div>
+
+          {/* Project 3 */}
+          <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+            <h3 className="text-xl font-semibold mb-2">SQL Queries</h3>
+            <p className="text-gray-600">
+              Complex queries and reports for business decision-making.
+            </p>
+            <a
+              href="https://github.com/yourusername/sql-projects"
+              target="_blank"
+              className="text-blue-600 hover:underline"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-6 bg-white shadow-inner">
+        <h2 className="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+        <p className="text-center text-gray-700 mb-6">
+          Feel free to reach out for collaborations or just a friendly hello 👇
+        </p>
+
+        <div className="flex justify-center gap-6 mb-6">
+          <a
+            href="https://linkedin.com/in/khushijaiswal20"
+            target="_blank"
+            className="px-6 py-3 bg-blue-700 text-white rounded-lg shadow hover:bg-blue-800"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            className="px-6 py-3 bg-gray-900 text-white rounded-lg shadow hover:bg-gray-700"
+          >
+            GitHub
+          </a>
+        </div>
+
+        {/* Contact Form */}
+        <form className="max-w-md mx-auto space-y-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="w-full px-4 py-2 border rounded-lg"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="w-full px-4 py-2 border rounded-lg"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <textarea
+            placeholder="Your Message"
+            className="w-full px-4 py-2 border rounded-lg"
+            rows={4}
           />
-          Go to nextjs.org →
-        </a>
+          <button
+            type="submit"
+            className="w-full px-6 py-3 bg-pink-600 text-white rounded-lg shadow hover:bg-pink-700"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-6 bg-gray-800 text-white">
+        <p>© 2025 Khushi Jaiswal. All rights reserved.</p>
       </footer>
-    </div>
+    </main>
   );
 }
