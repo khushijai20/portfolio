@@ -58,13 +58,13 @@ export default function Home() {
           You can view and download my resume below:
         </p>
         <div className="flex justify-center">
-          <a
-            href="/resume.pdf"
-            download
-            className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700"
-          >
-            Download Resume
-          </a>
+<a
+  href="/resume.pdf"
+  download="khushi_kumari_resume.pdf"
+  className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700"
+>
+  Download Resume
+</a>
         </div>
       </section>
 
@@ -137,7 +137,7 @@ export default function Home() {
             LinkedIn
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/khushijai20"
             target="_blank"
             className="px-6 py-3 bg-gray-900 text-white rounded-lg shadow hover:bg-gray-700"
           >
@@ -149,12 +149,12 @@ export default function Home() {
         <form className="max-w-md mx-auto space-y-4">
           <input
             type="text"
-            placeholder="Your Name"
+            placeholder="KHUSHI"
             className="w-full px-4 py-2 border rounded-lg"
           />
           <input
             type="email"
-            placeholder="Your Email"
+            placeholder="khushijai841221@gmail.com"
             className="w-full px-4 py-2 border rounded-lg"
           />
           <textarea
