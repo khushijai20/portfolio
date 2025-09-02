@@ -45,7 +45,7 @@ export default function Home() {
       <section id="about" className="py-20 px-6 bg-gray-50">
         <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
         <p className="max-w-3xl mx-auto text-center text-gray-700">
-          I’m Khushi, a passionate data analyst with a background in Python, SQL,
+          I&apos;m Khushi, a passionate data analyst with a background in Python, SQL,
           and Excel. I enjoy finding insights from data, building dashboards,
           and solving real-world problems through analytics.
         </p>
