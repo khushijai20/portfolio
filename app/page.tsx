@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen bg-gray-100 text-gray-900">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center py-20 bg-white shadow">
-        <h1 className="text-5xl font-bold mb-4">Hi, I'm Khushi 👋</h1>
+        <h1 className="text-5xl font-bold mb-4">Hi, I&apos;m Khushi 👋</h1>
         <h2 className="text-xl text-gray-600 mb-6">
           Data Analyst | Python | SQL | Excel
         </h2>
@@ -45,11 +45,10 @@ export default function Home() {
       <section id="about" className="py-20 px-6 bg-gray-50">
         <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
         <p className="max-w-3xl mx-auto text-center text-gray-700">
-          I&apos;m Khushi, a passionate data analyst with a background in Python, SQL,
-          and Excel. I enjoy finding insights from data, building dashboards,
-          and solving real-world problems through analytics.
-        </p>
-      </section>
+         I&apos;m Khushi, a passionate data analyst with a background in Python, SQL, and Excel. 
+        I enjoy finding insights from data, building dashboards, and solving real-world problems through analytics.
+       </p>   
+       </section>
 
       {/* Resume Section */}
       <section id="resume" className="py-20 px-6 bg-white shadow-inner">
@@ -62,9 +61,9 @@ export default function Home() {
   href="/resume.pdf"
   download="khushi_kumari_resume.pdf"
   className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700"
->
+ >
   Download Resume
-</a>
+    </a>
         </div>
       </section>
 
